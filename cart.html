@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nattilea - Home</title>
+    <link rel="icon" href="./favicon.ico">
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    <!-- header -->
+    <header data-include="header"></header>
+
+    <!-- main -->
+    <main class="page-wrapper">
+        <section class="cart-section">
+            <div class="container">
+                <h1 class="section-title">Your Cart</h1>
+                <div class="cart-table">
+                    <div class="cart-header d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p class="cart-header-item">Product</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="cart-header-item">Price</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="cart-header-item">Quantity</p>
+                            </div>
+                            <div class="col-lg-2">
+                                <p class="cart-header-item text-lg-end">Total</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <div class="item-thumbnail">
+                                                <img src="./assets/images/product-1.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div>
+                                                <p class="fw-bold">Viscose Georgette Tie & Dye Manderin Collar A-Line Kurta</p>
+                                                <p>Size: <span>XL / 42</span></p>
+                                                <p>Color: <span>Light Pink</span></p>
+                                                <p>Material: <span>Viscose Georgette</span></p>
+                                                <div class="controls">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <p class="item-price">$1,399.50</p>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="item-quantity quantity-selector my-4 my-lg-0">
+                                        <div class="input-group">
+                                            <div class="input-group-text"><i class="bx bx-minus"></i></div>
+                                            <input type="text" class="form-control text-center" value="2">
+                                            <div class="input-group-text"><i class="bx bx-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <p class="text-lg-end">$2799.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-sub-total">
+                    <p class="sub-total">SUBTOTAL: <span>$1,399.50</span></p>
+                    <p class="text-muted mb-4">Tax included and shipping calculated at checkout</p>
+                    <a href="checkout.html" class="btn btn-primary mb-3">CHECKOUT</a>
+                    <button class="btn btn-primary">CONTINUTE SHOPPING</button>
+                </div>
+            </div>
+        </section>
+        <section class="related-products">
+            <h2 class="section-title font-medium no-border text-center">Complete your cart</h2>
+            <div data-include="product-list"></div>
+        </section>
+        <section class="viewed-products">
+            <h2 class="section-title font-medium no-border text-center">Recently viewed products</h2>
+            <div data-include="product-list"></div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer data-include="footer"></footer>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nattilea - Home</title>
+    <link rel="icon" href="./favicon.ico">
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+    <!-- header -->
+    <header data-include="header"></header>
+
+    <!-- main -->
+    <main class="page-wrapper">
+        <section class="cart-section">
+            <div class="container">
+                <h1 class="section-title">Checkout</h1>
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="mb-4 mt-5 mt-lg-0">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="sub-title">Contact</h3>
+                                <p>Have an account? <a href="javascript:void(0)">Log in</a></p>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="contact" placeholder="name@example.com">
+                                <label for="contact">Email or mobile phone number</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="sub-title">Delivery</h3>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="country" placeholder="name@example.com">
+                                <label for="country">Country/Region</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="firstName" placeholder="name@example.com">
+                                        <label for="firstName">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="lastName" placeholder="name@example.com">
+                                        <label for="lastName">Last Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="address" placeholder="name@example.com">
+                                <label for="address">Address</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="city" placeholder="name@example.com">
+                                        <label for="city">City</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="state" placeholder="name@example.com">
+                                        <label for="state">State</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="pinCode" placeholder="name@example.com">
+                                        <label for="pinCode">Pin Code</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="name@example.com">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="saveInfo">
+                                <label for="saveInfo">Save this information for next time</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="textMeNews">
+                                <label for="textMeNews">Text me with news and offers</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="sub-title">Shipping Method</h3>
+                            <div class="widget-style2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0">Prepaid</p>
+                                    <p class="mb-0">Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="sub-title mb-1">Payment</h3>
+                            <p class="text-muted mb-4">All transactions are secure and encrypted.</p>
+                            <div class="widget-style2 custom-border-radius">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</p>
+                                    <div>
+                                        <img src="./assets/images/visa.svg" alt="">
+                                        <img src="./assets/images/master-card.svg" alt="">
+                                        <img src="./assets/images/rupay.svg" alt="">
+                                        <img src="./assets/images/803a640da9d99f1de41c.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-style1">
+                                <img src="./assets/images/redirect.png" alt="">
+                                <p>After clicking “Pay now”, you will be redirected to Razorpay Secure (UPI, Cards, Wallets, NetBanking) to complete your purchase securely.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="sub-title">Billing Address</h3>
+                            <div class="custom-radio-widget mb-3">
+                                <input type="radio" name="billingAddress" value="sameAddress" id="sameAddress" checked>
+                                <label for="sameAddress">Same as shipping address</label>
+                            </div>
+                            <div class="custom-radio-widget">
+                                <input type="radio" name="billingAddress" value="differentAddress" id="differentAddress">
+                                <label for="differentAddress">Use a different billing address</label>
+                            </div>
+                            <div class="widget-style1 newBillingAddress">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="firstName" placeholder="name@example.com">
+                                            <label for="firstName">First Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="lastName" placeholder="name@example.com">
+                                            <label for="lastName">Last Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="address" placeholder="name@example.com">
+                                    <label for="address">Address</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="city" placeholder="name@example.com">
+                                            <label for="city">City</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="state" placeholder="name@example.com">
+                                            <label for="state">State</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="pinCode" placeholder="name@example.com">
+                                            <label for="pinCode">Pin Code</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="phone" placeholder="name@example.com">
+                                    <label for="phone">Phone</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block">Pay Now</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cart-summary">
+                            <h1 class="sub-title d-lg-none">Order Summery</h1>
+                            <div class="cart-item">
+                                <div class="d-flex justify-content-between align-items-center gap-4 gap-lg-2">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/product-1.jpeg" alt="">
+                                    </div>
+                                    <div class="item-desc">
+                                        <p class="fw-bold">Viscose Georgette Tie & Dye Manderin Collar A-Line Kurta</p>
+                                        <p>Size: <span>XL / 42</span>/<span>Light Pink</span>/<span>Viscose Georgette</span></p>
+                                    </div>
+                                    <div>
+                                        <p>₹1,399.00</p>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="gift-coupon">
+                                <label class="mb-2 d-block">Discount code or gift card</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <button class="input-group-text btn btn-primary">Apply</button>
+                                </div>
+                            </div>
+                            <div class="cart-total mt-5">
+                                <p class="d-flex justify-content-between">
+                                    <span>Subtotal</span>
+                                    <span class="fw-bold">₹1,399.00</span>
+                                </p>
+                                <p class="d-flex justify-content-between">
+                                    <span>Shipping</span>
+                                    <span>Free</span>
+                                </p>
+                                <p class="grand-total d-flex justify-content-between">
+                                    <span>Total</span>
+                                    <span>₹1,399.00</span>
+                                </p>
+                                <p class="text-muted">Including ₹149.90 in taxes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer data-include="footer"></footer>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
